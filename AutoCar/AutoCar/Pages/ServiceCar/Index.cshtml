@@ -29,37 +29,72 @@
 
 <div>
     @if (Model.services.Count == 0)
-   {
-       <div class="alart alert-warning">
+    {
+        <div class="alart alert-warning">
 
-           سرویسی جهت نمایش یافت نشد. میتوانید از طریق
+            سرویسی جهت نمایش یافت نشد. میتوانید از طریق
             <a asp-page="Create" class="btn btn-info">
                 افزودن سرویس جدید
-               
+
             </a>
-           اقدام به افزودن سرویس کنید
+            اقدام به افزودن سرویس کنید
         </div>
 
     }
     else
     {
-        <div class="table table-striped border">
-            <tr class="table-secondary">
-                <th> عنوان سرویس</th>
-                <th> قیمت سرویس</th>
-                <th></th>
-            </tr>
 
-        </div>
-        @foreach (var item in Model.services)
-       {
-           <tr>
-               <td>@item.Name</td>
-               <td>@item.Price</td>
-               <td>
+        <table class="table table-secondary">
+            <thead>
+                <tr>
 
-               </td>
-           </tr>
-       }
+                    <th>سرویس</th>
+                    <th> قیمت سرویس</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.services)
+                {
+                    <tr>
+
+
+                        <td>@item.Name</td>
+                        <td>@item.Price  (ریال)</td>
+                        <td>
+                            <div class="btn-group">
+                                <button  type="button " asp-page="DetailsCar" asp-route-id="@item.Id" class="btn btn-outline-success">
+                                    <i class=" bi-eye"></i> جزیئات
+                                </button>
+                                <button type="button" asp-page="EditCar" asp-route-id="@item.Id" class="btn btn-outline-warning">
+                                    <i class="bi-pencil"></i> ویرایش
+                                </button>
+                                <button type="button" asp-page="DeleteCar" asp-route-id="@item.Id" class="btn btn-outline-danger">
+                                    <i class="bi-trash"></i> حذف
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                }
+
+            </tbody>
+        </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
 </div>
