@@ -1,0 +1,65 @@
+﻿@page
+@model AutoCar.Pages.ServiceCar.IndexModel
+@{
+}
+<h1>
+    لیست سرویس ها
+</h1>
+
+<br />
+
+<div class="border" style="background-color:white;">
+    <div class="row p-3">
+        <div class="col-6">
+            <h2 class="text-info">
+                لیست سرویس های ما
+            </h2>
+        </div>
+        <div class="col-6 text-right">
+
+            <a asp-page="Create" class="btn btn-info">
+                افزودن سرویس جدید
+                <i class="fas fa-plus fa-sm"></i>
+            </a>
+        </div>
+    </div>
+
+</div>
+
+
+<div>
+    @if (Model.services.Count == 0)
+   {
+       <div class="alart alert-warning">
+
+           سرویسی جهت نمایش یافت نشد. میتوانید از طریق
+            <a asp-page="Create" class="btn btn-info">
+                افزودن سرویس جدید
+               
+            </a>
+           اقدام به افزودن سرویس کنید
+        </div>
+
+    }
+    else
+    {
+        <div class="table table-striped border">
+            <tr class="table-secondary">
+                <th> عنوان سرویس</th>
+                <th> قیمت سرویس</th>
+                <th></th>
+            </tr>
+
+        </div>
+        @foreach (var item in Model.services)
+       {
+           <tr>
+               <td>@item.Name</td>
+               <td>@item.Price</td>
+               <td>
+
+               </td>
+           </tr>
+       }
+    }
+</div>

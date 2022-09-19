@@ -1,5 +1,16 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
+@font-face {
+    font-family: 'Shahab';
+    src: url('//cdn.font-store.ir/fonts/shahab/Shahab-Regular.woff2') format('woff2'), url('//cdn.font-store.ir/fonts/shahab/Shahab-Regular.woff') format('woff'), url('//cdn.font-store.ir/fonts/shahab/Shahab-Regular.ttf') format('truetype'), url('//cdn.font-store.ir/fonts/shahab/Shahab-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+a, p, span, button, h1, h2, h3, h4 {
+    font-family: 'Shahab' !important;
+}
+
 
 a.navbar-brand {
   white-space: normal;

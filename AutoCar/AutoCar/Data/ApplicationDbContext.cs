@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿
+using AutoCar.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -12,5 +14,7 @@ namespace AutoCar.Data
             : base(options)
         {
         }
+
+        public DbSet<ServiceTypeCar> serviceTypeCars { get; set; }
     }
 }

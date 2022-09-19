@@ -476,3 +476,5 @@ E:\ProjectMy RezorPage\AutoCar\AutoCar\AutoCar\obj\Debug\net5.0\Razor\Areas\Iden
 E:\ProjectMy RezorPage\AutoCar\AutoCar\AutoCar\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Error.cshtml.g.cs
 E:\ProjectMy RezorPage\AutoCar\AutoCar\AutoCar\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
 E:\ProjectMy RezorPage\AutoCar\AutoCar\AutoCar\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
+E:\ProjectMy RezorPage\AutoCar\AutoCar\AutoCar\obj\Debug\net5.0\Razor\Pages\ServiceCar\Index.cshtml.g.cs
+E:\ProjectMy RezorPage\AutoCar\AutoCar\AutoCar\obj\Debug\net5.0\Razor\Pages\ServiceCar\Create.cshtml.g.cs
